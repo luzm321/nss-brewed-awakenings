@@ -10,11 +10,11 @@ document.addEventListener(
             for (const product of products) {
                 if (product.id === parseInt(productId)) {
                     window.alert(`${product.name} costs $${product.price.toFixed(2)}`)
-                }
-            }
-        }
+                };
+            };
+        };
     }
-)
+);
 
 const products = getProducts()
 
@@ -28,5 +28,5 @@ export const Products = () => {
     html += "</ul>"
 
     return html
-}
+};
 
